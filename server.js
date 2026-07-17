@@ -17,6 +17,12 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
+// Railway 健康检查
+app.get('/health', (req, res) => {
+    res.json({ status: 'ok', time: new Date().toISOString() });
+});
+
+
 // 数据库初始化
 const db = new sqlite3.Database('./voting.db', (err) => {
     if (err) {
