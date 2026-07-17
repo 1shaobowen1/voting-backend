@@ -1,0 +1,19 @@
+{
+  "name": "voting-web-backend",
+  "version": "1.0.0",
+  "description": "投票系统后端服务",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "qrcode": "^1.5.4",
+    "sqlite3": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
